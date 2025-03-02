@@ -263,11 +263,12 @@ a:focus {
     position: relative;
     text-align: right;
     padding-right: 75px;
+    /* padding-top: 85px; */
 }
 
 .hero .hero-image img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .hero .hero-content {
@@ -1387,7 +1388,8 @@ a:focus {
 /*******************************/
 /*********** Blog CSS **********/
 /*******************************/
-.blog {
+
+.blog{
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
@@ -1396,12 +1398,13 @@ a:focus {
 .blog .blog-item {
     position: relative;
     margin-bottom: 30px;
+    /* border: 2px solid black; */
 }
 
 .blog .blog-img {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .blog .blog-img img {
@@ -1458,6 +1461,80 @@ a:focus {
 .blog .blog-meta p:last-child {
     margin: 0;
 }
+
+.certifications {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.certification-item {
+    position: relative;
+    margin-bottom: 30px;
+    /* border: 2px solid black; */
+}
+
+.certification-img {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.certification-img img {
+    width: 100%;
+    transition: .5s;
+}
+
+.certification-item:hover img {
+    transform: scale(1.1);
+}
+
+.certification-text {
+    position: relative;
+    padding: 30px;
+    border-right: 1px solid rgba(0, 0, 0, .07);
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+    border-left: 1px solid rgba(0, 0, 0, .07);
+}
+
+.certification-text h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.certification-text p {
+    margin-bottom: 10px;
+}
+
+.certification-item a.btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+}
+
+.certification-item a.btn i {
+    margin-left: 5px;
+}
+
+.certification-meta {
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.certification-meta p {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+}
+
+.certification-meta i {
+    color: #414141;
+    margin-right: 5px;
+}
+
+.certification-meta p:last-child {
+    margin: 0;
+}
+
 
 
 /*******************************/

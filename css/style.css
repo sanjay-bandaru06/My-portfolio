@@ -1534,6 +1534,34 @@ a:focus {
 .certification-meta p:last-child {
     margin: 0;
 }
+/* Force 4 items per row on all screen sizes */
+.certifications .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certifications .col-lg-3 {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+/* Optional: prevent items from stacking on mobile */
+@media (max-width: 768px) {
+    .certifications .col-lg-3 {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 
 
 
